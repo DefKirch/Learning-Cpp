@@ -25,9 +25,10 @@ class Dog {
       std::cout << "This animal is a " << kind << " and has " << amount_of_legs << " legs\n";
      }
 
-     ~Dog() {
+    // Destructor method, get's called when an object is destroyed. When an object moves out of scope or is explicitly deleted. 
+    ~Dog() {
       std::cout << "Removed object with name: " << name <<std::endl;
-     }
+    }
 };
 
 
