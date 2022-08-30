@@ -1,7 +1,5 @@
 #include <iostream>
 
-
-
 class Dog {
   private:
     std::string name;
