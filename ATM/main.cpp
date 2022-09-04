@@ -1,29 +1,24 @@
 #include <iostream>
-
-void showOptions() {
-  std::cout << "Option 1: Check you balance\n";
-  std::cout << "Option 2: Check you balance\n";
-  std::cout << "Option 1: Check you balance\n";
-  std::cout << "Option 1: Check you balance\n";
-};
+#include "atm_functions.hpp"
 
 int main() {
   bool running = true;
-  std::string option;
+  int option;
+  double balance = 0;
 
+  show_introduction();
 
-  std::cout << "****************\n";
-  std::cout << "================\n";
-  std::cout << "     ATM        \n";
-  std::cout << "================\n";
-  std::cout << "****************\n";
-
-
-  do {
-    showOptions();
-    std::cout << "\n You choose option: ";  
-    std::cin >> option;
-    
-  } while (running);
+  while (running) {
+    show_options();
+    option = ask_option();
+    switch(option) {
+      case 1: 
+        show_balance();
+        break;
+      case 2:
+        deposit_money();
+        break;
+    }
+  }
   return 0;
 }
