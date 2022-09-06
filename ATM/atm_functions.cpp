@@ -20,6 +20,9 @@ void show_introduction() {
  int ask_option() {
   int option;
   std::cout << "Option: ";  
+    // if (typeid(option).name()) {
+
+  // }
   std::cin >> option;
   return option;
 }
@@ -31,6 +34,9 @@ void show_balance(double bal) {
 double deposit_money() {
   double amount;
   std::cout << "Enter amount to be deposited: ";
+  // if (typeid(amount).name()) {
+
+  // }
   std::cin >> amount;
   std::cout << "\n";
   return amount;
@@ -39,6 +45,9 @@ double deposit_money() {
 double withdraw_money() {
   double amount;
   std::cout << "Enter amount to be withdrawn: ";
+    // if (typeid(amount).name()) {
+
+  // }
   std::cin >> amount;
   std::cout << "\n";
   return amount;
